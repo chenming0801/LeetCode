@@ -1,1 +1,9 @@
--eclass Solution {\n\tpublic int numJewelsInStones(String J, String S) {\n\t\tint res = 0;\n\t\tfor(char c:S.toCharArray()){\n\t\t\tif(J.indexOf(c)!=-1)res++;\n\t\t}\n\t\treturn res;\n\t}\n}
+class Solution {
+	public int numJewelsInStones(String J, String S) {
+		int res = 0;
+		for(char c:S.toCharArray()){
+			if(J.indexOf(c)!=-1)res++;
+		}
+		return res;
+	}
+}
